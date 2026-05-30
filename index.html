@@ -385,172 +385,157 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
           忠義路二段 NS: x≈194  南門路二段 NS: x≈257
           南門路一段 NS: x≈379  開山路 NS: x≈486
         -->
-        <svg viewBox="0 0 680 610" xmlns="http://www.w3.org/2000/svg" id="hmap">
+        <svg viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg" id="hmap">
           <defs>
             <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
               <polygon points="0 1,7 4,0 7" fill="#C0392B" opacity=".92"/>
             </marker>
           </defs>
           <!-- Base -->
-          <rect width="680" height="610" fill="#EDE7DC"/>
+          <rect width="680" height="600" fill="#EDE7DC"/>
+          <!-- Grid -->
+          <g stroke="#DDD5C5" stroke-width="1">
+            <line x1="80" y1="0" x2="80" y2="600"/><line x1="190" y1="0" x2="190" y2="600"/>
+            <line x1="263" y1="0" x2="263" y2="600"/><line x1="358" y1="0" x2="358" y2="600"/>
+            <line x1="443" y1="0" x2="443" y2="600"/><line x1="601" y1="0" x2="601" y2="600"/>
+            <line x1="0" y1="50" x2="680" y2="50"/><line x1="0" y1="143" x2="680" y2="143"/>
+            <line x1="0" y1="283" x2="680" y2="283"/><line x1="0" y1="340" x2="680" y2="340"/>
+            <line x1="0" y1="460" x2="680" y2="460"/>
+          </g>
 
-          <!-- Building blocks -->
+          <!-- Building footprints (positions from calibrated GPS) -->
           <!-- 孔廟 complex -->
-          <rect x="344" y="168" width="82" height="66" rx="3" fill="#D6CAB0" opacity=".9"/>
-          <rect x="349" y="173" width="72" height="56" rx="2" fill="#C8B898" opacity=".7"/>
-          <!-- 臺文館 -->
-          <rect x="226" y="56" width="64" height="50" rx="3" fill="#D6CAB0" opacity=".85"/>
+          <rect x="338" y="126" width="46" height="38" rx="2" fill="#D0C8B0" opacity=".9"/>
+          <rect x="342" y="130" width="38" height="30" rx="1" fill="#C4BA9A" opacity=".7"/>
+          <!-- 文學館 -->
+          <rect x="354" y="72" width="38" height="30" rx="2" fill="#D0C8B0" opacity=".85"/>
           <!-- 延平郡王祠 -->
-          <rect x="464" y="328" width="46" height="40" rx="3" fill="#D6CAB0" opacity=".8"/>
+          <rect x="582" y="268" width="28" height="24" rx="2" fill="#D0C8B0" opacity=".8"/>
           <!-- 五妃廟 -->
-          <rect x="190" y="476" width="40" height="34" rx="3" fill="#D6CAB0" opacity=".8"/>
+          <rect x="424" y="446" width="24" height="20" rx="2" fill="#D0C8B0" opacity=".8"/>
           <!-- 大南門 -->
-          <rect x="126" y="342" width="44" height="38" rx="3" fill="#C8B898" opacity=".75"/>
+          <rect x="246" y="324" width="26" height="22" rx="2" fill="#C4BA9A" opacity=".75"/>
           <!-- 司法博物館 -->
-          <rect x="174" y="244" width="48" height="40" rx="3" fill="#D6CAB0" opacity=".75"/>
-          <!-- 台南晶英酒店 (landmark) -->
-          <rect x="134" y="290" width="30" height="24" rx="2" fill="#D0C8B4" opacity=".5"/>
+          <rect x="108" y="186" width="28" height="24" rx="2" fill="#D0C8B0" opacity=".75"/>
 
-          <!-- ROADS -->
-          <!-- 民權路二段: y=75 -->
-          <rect x="0" y="68" width="680" height="12" fill="#E0D4C0"/>
-          <text x="340" y="66" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#a89070">民權路二段</text>
-          <!-- 府前路一段: y=199 -->
-          <rect x="0" y="193" width="680" height="11" fill="#E0D4C0"/>
-          <text x="55" y="191" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#a89070">府前路一段</text>
-          <!-- 健康路一段: y=510 -->
-          <rect x="0" y="504" width="680" height="10" fill="#E0D4C0"/>
-          <text x="55" y="502" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#a89070">健康路一段</text>
-          <!-- 建業街 y≈320 -->
-          <rect x="0" y="315" width="680" height="8" fill="#E8DCC8" opacity=".7"/>
+          <!-- Road network -->
+          <!-- EW: 民權路 y=50, 府前路 y=143, 建業街 y=200, 健康路 y=460 -->
+          <rect x="0" y="44" width="680" height="12" fill="#DDD5C5"/>
+          <text x="12" y="42" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#A89878">民權路二段</text>
+          <rect x="0" y="137" width="680" height="12" fill="#DDD5C5"/>
+          <text x="12" y="135" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#A89878">府前路一段</text>
+          <rect x="0" y="194" width="680" height="9" fill="#E4DCD0" opacity=".8"/>
+          <rect x="0" y="454" width="680" height="10" fill="#DDD5C5"/>
+          <text x="12" y="452" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#A89878">健康路一段</text>
+          <!-- NS roads -->
+          <rect x="74" y="0" width="11" height="600" fill="#E4DCD0"/>
+          <text x="76" y="310" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#A89878">西門路</text>
+          <rect x="184" y="0" width="11" height="600" fill="#DDD5C5"/>
+          <text x="186" y="380" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#A89878">忠義路</text>
+          <rect x="257" y="0" width="11" height="600" fill="#DDD5C5"/>
+          <text x="259" y="420" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#A89878">南門路二段</text>
+          <rect x="352" y="0" width="11" height="600" fill="#DDD5C5"/>
+          <text x="354" y="270" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#A89878">南門路一段</text>
+          <rect x="595" y="0" width="10" height="600" fill="#E4DCD0"/>
+          <text x="597" y="420" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#A89878">開山路</text>
+          <!-- 五妃街 diagonal -->
+          <line x1="322" y1="540" x2="601" y2="283" stroke="#E4DCD0" stroke-width="8"/>
+          <text x="465" y="430" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#A89878" transform="rotate(-27,465,430)">五妃街</text>
 
-          <!-- 西門路: x=100 -->
-          <rect x="94" y="0" width="10" height="610" fill="#E8DCC8"/>
-          <text x="97" y="340" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#a89070">西門路</text>
-          <!-- 忠義路二段: x=194 -->
-          <rect x="188" y="0" width="11" height="610" fill="#E0D4C0"/>
-          <text x="192" y="440" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#a89070">忠義路二段</text>
-          <!-- 南門路二段: x=257 -->
-          <rect x="251" y="0" width="11" height="610" fill="#E0D4C0"/>
-          <text x="255" y="180" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#a89070">南門路二段</text>
-          <!-- 南門路一段: x=379 -->
-          <rect x="373" y="0" width="11" height="610" fill="#E0D4C0"/>
-          <text x="377" y="280" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#a89070">南門路一段</text>
-          <!-- 開山路: x=486 -->
-          <rect x="480" y="0" width="10" height="610" fill="#E8DCC8"/>
-          <text x="484" y="440" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#a89070">開山路</text>
-          <!-- 五妃街 diagonal-ish -->
-          <line x1="209" y1="495" x2="486" y2="349" stroke="#E0D4C0" stroke-width="8"/>
-          <text x="340" y="438" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#a89070" transform="rotate(-20,340,438)">五妃街</text>
+          <!-- ROUTE (GPS-calibrated polyline from PDF analysis) -->
+          <!-- Shadow -->
+          <polyline points="377,50 412,50 412,123 244,123 85,160 80,197 184,250 323,540 437,540 635,390 630,347 635,253 561,180 531,160 377,50"
+            fill="none" stroke="rgba(160,40,25,0.5)" stroke-width="14" stroke-linejoin="round"/>
+          <!-- Main dashed route -->
+          <polyline points="377,50 412,50 412,123 244,123 85,160 80,197 184,250 323,540 437,540 635,390 630,347 635,253 561,180 531,160 377,50"
+            fill="none" stroke="#C0392B" stroke-width="8" stroke-dasharray="14,7"
+            stroke-linejoin="round" marker-end="url(#ar)" opacity=".9"/>
+          <!-- White dash overlay -->
+          <polyline points="377,50 412,50 412,123 244,123 85,160 80,197 184,250 323,540 437,540 635,390 630,347 635,253 561,180 531,160 377,50"
+            fill="none" stroke="white" stroke-width="3" stroke-dasharray="0,14 7,7"
+            stroke-linejoin="round" opacity=".7"/>
 
-          <!-- ROUTE POLYLINE
-               孔廟(379,199) → N on 南門路→ 民權路(379,75) → W on 民權路 →
-               文學館area(257,75) → S on 南門路二段 → 文學館(257,82) ← STOP
-               → S on 南門路二段(257,199) → W on 府前路(194,199) →
-               S on 忠義路 → 司法博物館(194,262) ← STOP
-               → S on 忠義路 → 大南門lat(194,360) → W(146,360) → 大南門(146,360) ← STOP
-               → S on 西門路(100,360) → S(100,495) → E on 五妃街(209,495) ← STOP
-               → E on 五妃街 → S on 開山路area → 延平郡王祠(486,349) ← STOP
-               → N on 開山路(486,199) → W on 府前路(379,199) ← END 孔廟
-          -->
-          <polyline 
-            points="379,199 379,75 257,75 257,82"
-            fill="none" stroke="#C0392B" stroke-width="2.8" stroke-dasharray="8,5" opacity=".88"/>
-          <polyline 
-            points="257,82 257,199 194,199 194,262"
-            fill="none" stroke="#C0392B" stroke-width="2.8" stroke-dasharray="8,5" opacity=".88"/>
-          <polyline 
-            points="194,262 194,360 146,360"
-            fill="none" stroke="#C0392B" stroke-width="2.8" stroke-dasharray="8,5" opacity=".88"/>
-          <polyline 
-            points="146,360 100,360 100,495 209,495"
-            fill="none" stroke="#C0392B" stroke-width="2.8" stroke-dasharray="8,5" opacity=".88"/>
-          <polyline 
-            points="209,495 379,495 486,495 486,349"
-            fill="none" stroke="#C0392B" stroke-width="2.8" stroke-dasharray="8,5" marker-end="url(#ar)" opacity=".88"/>
-          <polyline 
-            points="486,349 486,199 379,199"
-            fill="none" stroke="#C0392B" stroke-width="2.8" stroke-dasharray="8,5" marker-end="url(#ar)" opacity=".88"/>
-
-          <!-- STOP 1: 孔廟 (379,199) -->
+          <!-- ── LANDMARK DOTS ── -->
+          <!-- 1 孔廟 (358,143) main -->
           <g onclick="openModal(0)" style="cursor:pointer">
-            <circle cx="379" cy="199" r="19" fill="#2C3E57" opacity=".12"/>
-            <circle cx="379" cy="199" r="12" fill="#2C3E57"/>
-            <text x="379" y="204" text-anchor="middle" font-family="Noto Serif TC,sans-serif" font-size="9.5" fill="white" font-weight="bold">孔</text>
+            <circle cx="358" cy="143" r="22" fill="#2C3E57" opacity=".12"/>
+            <circle cx="358" cy="143" r="14" fill="#2C3E57"/>
+            <text x="358" y="148" text-anchor="middle" font-family="Noto Serif TC,serif" font-size="10" fill="white" font-weight="bold">孔</text>
           </g>
-          <rect x="395" y="185" width="74" height="29" rx="4" fill="white" opacity=".86"/>
-          <text x="432" y="197" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#2C3E57" font-weight="bold">台南孔廟</text>
-          <text x="432" y="208" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#6B89A7">起點 · 禮</text>
+          <rect x="376" y="129" width="78" height="30" rx="4" fill="white" opacity=".9"/>
+          <text x="415" y="143" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="9.5" fill="#2C3E57" font-weight="bold">台南孔廟</text>
+          <text x="415" y="154" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#6B89A7">起點·禮</text>
 
-          <!-- STOP 2: 臺文館 (257,82) -->
+          <!-- 2 文學館 (373,93) -->
           <g onclick="openModal(1)" style="cursor:pointer">
-            <circle cx="257" cy="82" r="15" fill="#6B89A7" opacity=".12"/>
-            <circle cx="257" cy="82" r="10" fill="#6B89A7"/>
-            <text x="257" y="86" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">2</text>
+            <circle cx="373" cy="93" r="16" fill="#6B89A7" opacity=".12"/>
+            <circle cx="373" cy="93" r="10" fill="#6B89A7"/>
+            <text x="373" y="97" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">2</text>
           </g>
-          <rect x="271" y="69" width="90" height="28" rx="4" fill="white" opacity=".86"/>
-          <text x="316" y="81" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#6B89A7" font-weight="bold">臺灣文學館</text>
-          <text x="316" y="91" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">湯德章公園 · 義</text>
+          <rect x="388" y="80" width="90" height="28" rx="4" fill="white" opacity=".9"/>
+          <text x="433" y="92" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#6B89A7" font-weight="bold">臺灣文學館</text>
+          <text x="433" y="102" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">湯德章·義</text>
 
-          <!-- STOP 3: 司法博物館 (194,262) -->
+          <!-- 3 司法博物館 (125,200) -->
           <g onclick="openModal(2)" style="cursor:pointer">
-            <circle cx="194" cy="262" r="15" fill="#6B89A7" opacity=".12"/>
-            <circle cx="194" cy="262" r="10" fill="#6B89A7"/>
-            <text x="194" y="266" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">3</text>
+            <circle cx="125" cy="200" r="14" fill="#8C8273" opacity=".12"/>
+            <circle cx="125" cy="200" r="9" fill="#8C8273"/>
+            <text x="125" y="204" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">3</text>
           </g>
-          <rect x="13" y="249" width="74" height="28" rx="4" fill="white" opacity=".86"/>
-          <text x="50" y="261" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#6B89A7" font-weight="bold">司法博物館</text>
-          <text x="50" y="271" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">沿線 · 公義</text>
+          <rect x="16" y="188" width="72" height="27" rx="4" fill="white" opacity=".9"/>
+          <text x="52" y="200" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#8C8273" font-weight="bold">司法博物館</text>
+          <text x="52" y="210" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">沿線·法</text>
 
-          <!-- STOP 4: 大南門 (146,360) -->
+          <!-- 4 大南門 (263,340) -->
           <g onclick="openModal(3)" style="cursor:pointer">
-            <circle cx="146" cy="360" r="15" fill="#6B89A7" opacity=".12"/>
-            <circle cx="146" cy="360" r="10" fill="#6B89A7"/>
-            <text x="146" y="364" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">4</text>
+            <circle cx="263" cy="340" r="16" fill="#6B89A7" opacity=".12"/>
+            <circle cx="263" cy="340" r="10" fill="#6B89A7"/>
+            <text x="263" y="344" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">4</text>
           </g>
-          <rect x="13" y="347" width="68" height="28" rx="4" fill="white" opacity=".86"/>
-          <text x="47" y="359" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#6B89A7" font-weight="bold">大南門</text>
-          <text x="47" y="369" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">碑林 · 智</text>
+          <rect x="16" y="328" width="72" height="28" rx="4" fill="white" opacity=".9"/>
+          <text x="52" y="340" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#6B89A7" font-weight="bold">大南門</text>
+          <text x="52" y="350" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">碑林·智</text>
 
-          <!-- STOP 5: 五妃廟 (209,495) -->
+          <!-- 5 五妃廟 (442,460) -->
           <g onclick="openModal(4)" style="cursor:pointer">
-            <circle cx="209" cy="495" r="15" fill="#6B89A7" opacity=".12"/>
-            <circle cx="209" cy="495" r="10" fill="#6B89A7"/>
-            <text x="209" y="499" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">5</text>
+            <circle cx="442" cy="460" r="16" fill="#6B89A7" opacity=".12"/>
+            <circle cx="442" cy="460" r="10" fill="#6B89A7"/>
+            <text x="442" y="464" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">5</text>
           </g>
-          <rect x="224" y="482" width="56" height="28" rx="4" fill="white" opacity=".86"/>
-          <text x="252" y="494" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#6B89A7" font-weight="bold">五妃廟</text>
-          <text x="252" y="504" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">信</text>
+          <rect x="458" y="448" width="60" height="28" rx="4" fill="white" opacity=".9"/>
+          <text x="488" y="460" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#6B89A7" font-weight="bold">五妃廟</text>
+          <text x="488" y="470" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">信</text>
 
-          <!-- STOP 6: 延平郡王祠 (486,349) -->
+          <!-- 6 延平郡王祠 (601,283) -->
           <g onclick="openModal(5)" style="cursor:pointer">
-            <circle cx="486" cy="349" r="15" fill="#6B89A7" opacity=".12"/>
-            <circle cx="486" cy="349" r="10" fill="#6B89A7"/>
-            <text x="486" y="353" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">6</text>
+            <circle cx="601" cy="283" r="16" fill="#6B89A7" opacity=".12"/>
+            <circle cx="601" cy="283" r="10" fill="#6B89A7"/>
+            <text x="601" y="287" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">6</text>
           </g>
-          <rect x="502" y="336" width="82" height="28" rx="4" fill="white" opacity=".86"/>
-          <text x="543" y="348" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#6B89A7" font-weight="bold">延平郡王祠</text>
-          <text x="543" y="358" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">仁</text>
+          <rect x="530" y="271" width="64" height="28" rx="4" fill="white" opacity=".9"/>
+          <text x="562" y="283" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8" fill="#6B89A7" font-weight="bold">延平郡王祠</text>
+          <text x="562" y="293" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="#8aabb5">仁</text>
 
-          <!-- LEGEND -->
-          <rect x="12" y="520" width="162" height="82" rx="7" fill="white" opacity=".88"/>
-          <circle cx="26" cy="536" r="6" fill="#2C3E57"/><text x="37" y="540" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#2C3E57">主場地（行動劇場）</text>
-          <circle cx="26" cy="554" r="6" fill="#6B89A7"/><text x="37" y="558" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#6B89A7">古蹟點位</text>
-          <line x1="16" y1="572" x2="38" y2="572" stroke="#C0392B" stroke-width="2.5" stroke-dasharray="5,3"/>
-          <text x="44" y="576" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#C0392B">步行路線 (3.9km)</text>
-
-          <!-- COMPASS -->
-          <g transform="translate(648,572)">
-            <circle r="16" fill="white" stroke="#ccc" stroke-width="1"/>
-            <text y="-4" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#C0392B" font-weight="bold">N</text>
-            <line x1="0" y1="-11" x2="0" y2="11" stroke="#ccc" stroke-width="1"/>
-            <line x1="-11" y1="0" x2="11" y2="0" stroke="#ccc" stroke-width="1"/>
+          <!-- Compass -->
+          <g transform="translate(645,555)">
+            <circle r="18" fill="white" stroke="#ccc" stroke-width="1"/>
+            <circle r="14" fill="#F5F0E8"/>
+            <polygon points="0,-12 -6,-2 6,-2" fill="#C0392B"/>
+            <polygon points="0,12 -6,2 6,2" fill="#8C8273"/>
+            <text y="-19" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#C0392B" font-weight="bold">N</text>
           </g>
-          <!-- Scale 200m marker (from Google Maps scale bar) -->
-          <line x1="490" y1="592" x2="576" y2="592" stroke="#8a7e70" stroke-width="1.5"/>
-          <line x1="490" y1="586" x2="490" y2="598" stroke="#8a7e70" stroke-width="1.5"/>
-          <line x1="576" y1="586" x2="576" y2="598" stroke="#8a7e70" stroke-width="1.5"/>
-          <text x="533" y="604" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#8a7e70">200m</text>
+          <!-- Scale 200m -->
+          <line x1="490" y1="580" x2="639" y2="580" stroke="#8a7e70" stroke-width="2"/>
+          <line x1="490" y1="574" x2="490" y2="586" stroke="#8a7e70" stroke-width="2"/>
+          <line x1="639" y1="574" x2="639" y2="586" stroke="#8a7e70" stroke-width="2"/>
+          <text x="564" y="595" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#8a7e70">200m</text>
+
+          <!-- Legend -->
+          <rect x="12" y="505" width="168" height="70" rx="6" fill="white" opacity=".9"/>
+          <circle cx="26" cy="519" r="6" fill="#2C3E57"/><text x="37" y="523" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#2C3E57">主場地（行動劇場）</text>
+          <circle cx="26" cy="537" r="6" fill="#6B89A7"/><text x="37" y="541" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#6B89A7">古蹟點位</text>
+          <line x1="16" y1="555" x2="38" y2="555" stroke="#C0392B" stroke-width="2.5" stroke-dasharray="5,3"/>
+          <text x="44" y="559" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#C0392B">步行路線 3.9km</text>
         </svg>
         <div class="mapcap">※ 路線依 Google Maps 座標繪製（3.9km · 步行約 55 分，含停留表演約 3 小時）。點選各標記查看劇場介紹。</div>
       </div>
