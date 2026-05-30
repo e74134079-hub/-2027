@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1754 1240" width="1754" height="1240" font-family="'Noto Serif TC','Noto Sans TC','PingFang TC','Hiragino Sans GB',sans-serif">
+<defs>
+  <!-- Row stripe -->
+  <pattern id="hlines" x="0" y="0" width="1754" height="6" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="1754" y2="0" stroke="#EDE6DA" stroke-width="1"/>
+  </pattern>
+
+  <!-- Clip for map area -->
+  <clipPath id="rowclip0"><rect x="336" y="240" width="1370" height="122"/></clipPath>
+  <clipPath id="rowclip1"><rect x="336" y="362" width="1370" height="122"/></clipPath>
+  <clipPath id="rowclip2"><rect x="336" y="484" width="1370" height="122"/></clipPath>
+  <clipPath id="rowclip3"><rect x="336" y="606" width="1370" height="122"/></clipPath>
+  <clipPath id="rowclip4"><rect x="336" y="728" width="1370" height="122"/></clipPath>
+  <clipPath id="rowclip5"><rect x="336" y="850" width="1370" height="122"/></clipPath>
+  <clipPath id="rowclip6"><rect x="336" y="972" width="1370" height="122"/></clipPath>
+  <clipPath id="rowclip7"><rect x="336" y="1094" width="1370" height="122"/></clipPath>
+
+  <!-- Arrow marker for route -->
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <polygon points="0,1 7,4 0,7" fill="#C0392B" opacity="0.9"/>
+  </marker>
+</defs>
+
+<!-- ══════════════ BACKGROUND ══════════════ -->
+<rect width="1754" height="1240" fill="#F5F0E8"/>
+<rect width="1754" height="1240" fill="url(#hlines)"/>
+
+<!-- Alternating row stripes -->
+<rect x="0"   y="240" width="1754" height="122" fill="#EEE8DE" opacity="0.6"/>
+<rect x="0"   y="484" width="1754" height="122" fill="#EEE8DE" opacity="0.6"/>
+<rect x="0"   y="728" width="1754" height="122" fill="#EEE8DE" opacity="0.6"/>
+<rect x="0"   y="972" width="1754" height="122" fill="#EEE8DE" opacity="0.6"/>
+
+<!-- ══════════════ HEADER BAR ══════════════ -->
+<rect x="0" y="0" width="1754" height="180" fill="#20304A"/>
+<rect x="0" y="0" width="1754" height="10"  fill="#C0392B"/>
+<rect x="0" y="172" width="1754" height="8" fill="#C9A66B"/>
+
+<!-- Header: title left -->
+<text x="68" y="88"  font-size="72" font-weight="900" fill="white" letter-spacing="-1">演出時程</text>
+<text x="68" y="128" font-size="24" fill="#6B89A7" font-family="'IBM Plex Mono',monospace" letter-spacing="2">Program  |  Programme</text>
+<text x="68" y="160" font-size="22" fill="#BDA882" letter-spacing="1">有孔繞繞  2027  台南孔廟歡慶三月</text>
+
+<!-- Header: right badges -->
+<rect x="1370" y="22" width="360" height="76" rx="10" fill="#C0392B"/>
+<text x="1388" y="60"  font-size="26" font-weight="700" fill="white" font-family="'IBM Plex Mono',monospace">2027 · 03 · 21</text>
+<text x="1420" y="86"  font-size="18" fill="#F5D5C5">繞境大典</text>
+
+<rect x="1370" y="108" width="360" height="54" rx="8" fill="#2C3E57" opacity="0.9"/>
+<text x="1388" y="138" font-size="18" fill="#6B89A7" font-family="'IBM Plex Mono',monospace" letter-spacing="1">3 hrs · 3.9 km · 台南孔廟出發</text>
+
+<!-- ══════════════ TIME AXIS ══════════════ -->
+<!-- Axis baseline -->
+<line x1="336" y1="226" x2="1706" y2="226" stroke="#8C8273" stroke-width="1.5"/>
+
+<!-- Hour ticks + labels -->
+<!-- 06:00 x=336 -->
+<line x1="336" y1="214" x2="336" y2="238" stroke="#2C3E57" stroke-width="2"/>
+<text x="310" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">06:00</text>
+<!-- 07:00 x=430 -->
+<line x1="430" y1="218" x2="430" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="404" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">07:00</text>
+<!-- 08:00 x=525 -->
+<line x1="525" y1="218" x2="525" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="499" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">08:00</text>
+<!-- 09:00 x=619 -->
+<line x1="619" y1="218" x2="619" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="593" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">09:00</text>
+<!-- 10:00 x=714 -->
+<line x1="714" y1="214" x2="714" y2="238" stroke="#2C3E57" stroke-width="2"/>
+<text x="688" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">10:00</text>
+<!-- 11:00 x=808 -->
+<line x1="808" y1="218" x2="808" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="782" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">11:00</text>
+<!-- 12:00 x=903 -->
+<line x1="903" y1="218" x2="903" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="877" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">12:00</text>
+<!-- 13:00 x=997 -->
+<line x1="997" y1="218" x2="997" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="971" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">13:00</text>
+<!-- 14:00 x=1092 -->
+<line x1="1092" y1="218" x2="1092" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="1066" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">14:00</text>
+<!-- 15:00 x=1186 -->
+<line x1="1186" y1="214" x2="1186" y2="238" stroke="#2C3E57" stroke-width="2"/>
+<text x="1160" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">15:00</text>
+<!-- 16:00 x=1281 -->
+<line x1="1281" y1="214" x2="1281" y2="238" stroke="#2C3E57" stroke-width="2"/>
+<text x="1255" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">16:00</text>
+<!-- 17:00 x=1375 -->
+<line x1="1375" y1="214" x2="1375" y2="238" stroke="#2C3E57" stroke-width="2"/>
+<text x="1349" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">17:00</text>
+<!-- 18:00 x=1470 -->
+<line x1="1470" y1="214" x2="1470" y2="238" stroke="#2C3E57" stroke-width="2"/>
+<text x="1444" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">18:00</text>
+<!-- 19:00 x=1564 -->
+<line x1="1564" y1="218" x2="1564" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="1538" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">19:00</text>
+<!-- 20:00 x=1659 -->
+<line x1="1659" y1="218" x2="1659" y2="234" stroke="#2C3E57" stroke-width="1.5"/>
+<text x="1633" y="210" font-size="17" fill="#2C3E57" font-family="'IBM Plex Mono',monospace">20:00</text>
+
+<!-- Half-hour ticks (every 30min) -->
+<line x1="383" y1="221" x2="383" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="478" y1="221" x2="478" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="572" y1="221" x2="572" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="666" y1="221" x2="666" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="761" y1="221" x2="761" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="855" y1="221" x2="855" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="950" y1="221" x2="950" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="1044" y1="221" x2="1044" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="1139" y1="221" x2="1139" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="1233" y1="221" x2="1233" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="1328" y1="221" x2="1328" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="1422" y1="221" x2="1422" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="1517" y1="221" x2="1517" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="1611" y1="221" x2="1611" y2="231" stroke="#8C8273" stroke-width="1"/>
+<line x1="1706" y1="221" x2="1706" y2="231" stroke="#8C8273" stroke-width="1"/>
+
+<!-- ══════════════ VERTICAL GRID LINES (full height, subtle) ══════════════ -->
+<g stroke="#D4CBB8" stroke-width="1" stroke-dasharray="4 4" opacity="0.7">
+  <line x1="430"  y1="240" x2="430"  y2="1216"/>
+  <line x1="525"  y1="240" x2="525"  y2="1216"/>
+  <line x1="619"  y1="240" x2="619"  y2="1216"/>
+  <line x1="714"  y1="240" x2="714"  y2="1216"/>
+  <line x1="808"  y1="240" x2="808"  y2="1216"/>
+  <line x1="903"  y1="240" x2="903"  y2="1216"/>
+  <line x1="997"  y1="240" x2="997"  y2="1216"/>
+  <line x1="1092" y1="240" x2="1092" y2="1216"/>
+  <line x1="1281" y1="240" x2="1281" y2="1216"/>
+  <line x1="1375" y1="240" x2="1375" y2="1216"/>
+  <line x1="1470" y1="240" x2="1470" y2="1216"/>
+  <line x1="1564" y1="240" x2="1564" y2="1216"/>
+  <line x1="1659" y1="240" x2="1659" y2="1216"/>
+</g>
+<line x1="1186" y1="240" x2="1186" y2="1216" stroke="#C0392B" stroke-width="1.5" stroke-dasharray="6 3" opacity="0.35"/>
+
+<!-- ══════════════ 繞境大典 HIGHLIGHT BAND 15:00–18:00 ══════════════ -->
+<rect x="1186" y="180" width="284" height="60" fill="#C0392B"/>
+<text x="1198" y="216" font-size="18" font-weight="700" fill="white">有孔繞繞大典　15:00–18:00</text>
+<rect x="1186" y="240" width="284" height="976" fill="#C0392B" opacity="0.07"/>
+
+<!-- ══════════════════════════════════════════════
+     ROW 0 — 序章 · 孔廟廣場  (禮 · GOLD)
+════════════════════════════════════════════════ -->
+<!-- Label bg -->
+<rect x="0" y="240" width="320" height="122" fill="#20304A"/>
+<rect x="0" y="240" width="10" height="122" fill="#C9A66B"/>
+<!-- Virtue badge -->
+<rect x="18" y="270" width="44" height="44" rx="7" fill="#C9A66B"/>
+<text x="22" y="300" font-size="26" font-weight="900" fill="white">禮</text>
+<!-- Stage name -->
+<text x="74" y="272" font-size="17" font-weight="700" fill="white">序章 · 孔廟廣場</text>
+<text x="74" y="294" font-size="12" fill="#A89070" font-family="'IBM Plex Mono',monospace">Prologue · Confucius Temple</text>
+<!-- Separator -->
+<line x1="320" y1="240" x2="320" y2="362" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- Events: 祭孔大典 06:00–07:00 x=336→430 w=94 -->
+<rect x="340" y="254" width="86" height="94" rx="8" fill="#C9A66B"/>
+<line x1="344" y1="258" x2="422" y2="258" stroke="white" stroke-width="2" opacity="0.4"/>
+<text x="348" y="284" font-size="14" font-weight="700" fill="white">祭孔大典</text>
+<text x="348" y="302" font-size="11" fill="rgba(255,255,255,0.75)" font-family="'IBM Plex Mono',monospace">06:00–07:00</text>
+<text x="348" y="319" font-size="11" fill="rgba(255,255,255,0.6)">春分清晨</text>
+
+<!-- 開市儀式 10:00–11:00 x=714→808 w=94 -->
+<rect x="718" y="254" width="86" height="94" rx="8" fill="#C9A66B"/>
+<line x1="722" y1="258" x2="800" y2="258" stroke="white" stroke-width="2" opacity="0.4"/>
+<text x="726" y="284" font-size="14" font-weight="700" fill="white">開市儀式</text>
+<text x="726" y="302" font-size="11" fill="rgba(255,255,255,0.75)" font-family="'IBM Plex Mono',monospace">10:00–11:00</text>
+<text x="726" y="319" font-size="11" fill="rgba(255,255,255,0.6)">市集揭幕</text>
+
+<!-- 有孔繞繞出發 15:00–15:30 x=1186→1233 w=47 -->
+<rect x="1190" y="254" width="39" height="94" rx="6" fill="#C9A66B"/>
+
+<!-- 終章歸廟 17:30–18:00 x=1423→1470 w=47 -->
+<rect x="1427" y="254" width="39" height="94" rx="6" fill="#B8956A"/>
+
+<!-- Row bottom separator -->
+<line x1="0" y1="362" x2="1754" y2="362" stroke="#D4CBB8" stroke-width="1"/>
+
+<!-- ══════════════════════════════════════════════
+     ROW 1 — 第一幕 · 臺灣文學館  (義 · STEEL)
+════════════════════════════════════════════════ -->
+<rect x="0" y="362" width="320" height="122" fill="#1E2E3F"/>
+<rect x="0" y="362" width="10" height="122" fill="#6B89A7"/>
+<rect x="18" y="392" width="44" height="44" rx="7" fill="#6B89A7"/>
+<text x="22" y="422" font-size="26" font-weight="900" fill="white">義</text>
+<text x="74" y="394" font-size="17" font-weight="700" fill="white">第一幕 · 臺灣文學館</text>
+<text x="74" y="413" font-size="11" fill="#7A9080" font-family="'IBM Plex Mono',monospace">Act I · Museum of Taiwan Literature</text>
+<text x="74" y="432" font-size="11" fill="#5A7888" font-family="'IBM Plex Mono',monospace">湯德章紀念公園</text>
+<line x1="320" y1="362" x2="320" y2="484" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- 義款裝置展示 10:00–18:00 (outline) x=714→1470 w=756 -->
+<rect x="718" y="372" width="748" height="38" rx="6" fill="none" stroke="#6B89A7" stroke-width="2"/>
+<text x="726" y="396" font-size="14" fill="#6B89A7" font-weight="600">義款孔小聖 裝置展示　10:00–18:00</text>
+
+<!-- 路中央的義 15:30–16:10 x=1234→1297 w=63 -->
+<rect x="1237" y="418" width="55" height="57" rx="7" fill="#6B89A7"/>
+<text x="1242" y="440" font-size="13" font-weight="700" fill="white">路中央</text>
+<text x="1242" y="457" font-size="13" font-weight="700" fill="white">的義</text>
+<text x="1242" y="470" font-size="10" fill="rgba(255,255,255,0.7)" font-family="'IBM Plex Mono',monospace">20min</text>
+
+<line x1="0" y1="484" x2="1754" y2="484" stroke="#D4CBB8" stroke-width="1"/>
+
+<!-- ══════════════════════════════════════════════
+     ROW 2 — 第二幕 · 延平郡王祠  (仁 · WARM BROWN)
+════════════════════════════════════════════════ -->
+<rect x="0" y="484" width="320" height="122" fill="#20304A"/>
+<rect x="0" y="484" width="10" height="122" fill="#9B6E37"/>
+<rect x="18" y="514" width="44" height="44" rx="7" fill="#9B6E37"/>
+<text x="22" y="544" font-size="26" font-weight="900" fill="white">仁</text>
+<text x="74" y="516" font-size="17" font-weight="700" fill="white">第二幕 · 延平郡王祠</text>
+<text x="74" y="535" font-size="11" fill="#9A8060" font-family="'IBM Plex Mono',monospace">Act II · Koxinga Shrine</text>
+<line x1="320" y1="484" x2="320" y2="606" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- 仁款裝置 10:00–18:00 outline -->
+<rect x="718" y="494" width="748" height="38" rx="6" fill="none" stroke="#9B6E37" stroke-width="2"/>
+<text x="726" y="518" font-size="14" fill="#9B6E37" font-weight="600">仁款孔小聖 裝置展示　10:00–18:00</text>
+
+<!-- 前無古人 16:30–17:10 x=1328→1391 w=63 -->
+<rect x="1332" y="540" width="55" height="57" rx="7" fill="#9B6E37"/>
+<text x="1337" y="562" font-size="13" font-weight="700" fill="white">前無古人</text>
+<text x="1337" y="580" font-size="10" fill="rgba(255,255,255,0.7)" font-family="'IBM Plex Mono',monospace">20min</text>
+
+<line x1="0" y1="606" x2="1754" y2="606" stroke="#D4CBB8" stroke-width="1"/>
+
+<!-- ══════════════════════════════════════════════
+     ROW 3 — 第三幕 · 五妃廟  (信 · ROSE)
+════════════════════════════════════════════════ -->
+<rect x="0" y="606" width="320" height="122" fill="#1E2E3F"/>
+<rect x="0" y="606" width="10" height="122" fill="#A54B64"/>
+<rect x="18" y="636" width="44" height="44" rx="7" fill="#A54B64"/>
+<text x="22" y="666" font-size="26" font-weight="900" fill="white">信</text>
+<text x="74" y="638" font-size="17" font-weight="700" fill="white">第三幕 · 五妃廟</text>
+<text x="74" y="657" font-size="11" fill="#8A5060" font-family="'IBM Plex Mono',monospace">Act III · Wufei Temple</text>
+<line x1="320" y1="606" x2="320" y2="728" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- 信款裝置 outline -->
+<rect x="718" y="616" width="748" height="38" rx="6" fill="none" stroke="#A54B64" stroke-width="2"/>
+<text x="726" y="640" font-size="14" fill="#A54B64" font-weight="600">信款孔小聖 裝置展示　10:00–18:00</text>
+
+<!-- 五封未寄的信 16:00–16:30 x=1281→1328 w=47 -->
+<rect x="1285" y="662" width="39" height="57" rx="7" fill="#A54B64"/>
+<text x="1290" y="682" font-size="11" font-weight="700" fill="white">五封</text>
+<text x="1290" y="698" font-size="11" font-weight="700" fill="white">未寄</text>
+<text x="1290" y="713" font-size="9" fill="rgba(255,255,255,0.7)" font-family="'IBM Plex Mono',monospace">20m</text>
+
+<line x1="0" y1="728" x2="1754" y2="728" stroke="#D4CBB8" stroke-width="1"/>
+
+<!-- ══════════════════════════════════════════════
+     ROW 4 — 第四幕 · 大南門  (智 · TEAL)
+════════════════════════════════════════════════ -->
+<rect x="0" y="728" width="320" height="122" fill="#20304A"/>
+<rect x="0" y="728" width="10" height="122" fill="#46826E"/>
+<rect x="18" y="758" width="44" height="44" rx="7" fill="#46826E"/>
+<text x="22" y="788" font-size="26" font-weight="900" fill="white">智</text>
+<text x="74" y="760" font-size="17" font-weight="700" fill="white">第四幕 · 大南門碑林</text>
+<text x="74" y="779" font-size="11" fill="#508070" font-family="'IBM Plex Mono',monospace">Act IV · Great South Gate</text>
+<line x1="320" y1="728" x2="320" y2="850" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- 智款裝置 outline -->
+<rect x="718" y="738" width="748" height="38" rx="6" fill="none" stroke="#46826E" stroke-width="2"/>
+<text x="726" y="762" font-size="14" fill="#46826E" font-weight="600">智款孔小聖 裝置展示　10:00–18:00</text>
+
+<!-- 城門開不開 15:50–16:20 x=1265→1312 w=47 -->
+<rect x="1268" y="784" width="39" height="57" rx="7" fill="#46826E"/>
+<text x="1272" y="804" font-size="11" font-weight="700" fill="white">城門</text>
+<text x="1272" y="820" font-size="11" font-weight="700" fill="white">開不開</text>
+<text x="1272" y="833" font-size="9" fill="rgba(255,255,255,0.7)" font-family="'IBM Plex Mono',monospace">20m</text>
+
+<line x1="0" y1="850" x2="1754" y2="850" stroke="#D4CBB8" stroke-width="1"/>
+
+<!-- ══════════════════════════════════════════════
+     ROW 5 — 孔怕愛上你  (♥ PINK · 3/14 special)
+════════════════════════════════════════════════ -->
+<rect x="0" y="850" width="320" height="122" fill="#1E2E3F"/>
+<rect x="0" y="850" width="10" height="122" fill="#B44B73"/>
+<rect x="18" y="880" width="44" height="44" rx="7" fill="#B44B73"/>
+<text x="24" y="910" font-size="24" font-weight="900" fill="white">♥</text>
+<text x="74" y="882" font-size="16" font-weight="700" fill="white">孔怕愛上你　3/14 特別企劃</text>
+<text x="74" y="901" font-size="11" fill="#884055" font-family="'IBM Plex Mono',monospace">Special · Valentine's Day Event</text>
+<text x="74" y="918" font-size="11" fill="#7A3850">台南彩虹遊行 · 情人節限定款</text>
+<line x1="320" y1="850" x2="320" y2="972" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- Full span block 10:00–20:30 x=714→1706 w=992 -->
+<rect x="718" y="862" width="984" height="98" rx="8" fill="#B44B73"/>
+<line x1="722" y1="866" x2="1698" y2="866" stroke="white" stroke-width="2" opacity="0.25"/>
+<text x="730" y="900" font-size="17" font-weight="700" fill="white">孔怕愛上你 × 台南彩虹遊行　10:00–20:30</text>
+<text x="730" y="922" font-size="13" fill="rgba(255,255,255,0.75)" font-family="'IBM Plex Mono',monospace">情人節限定款孔小聖 · 市集現場限量蒐集 · 3/14 only</text>
+<text x="730" y="944" font-size="13" fill="rgba(255,255,255,0.65)">♥ ♥ ♥</text>
+
+<line x1="0" y1="972" x2="1754" y2="972" stroke="#D4CBB8" stroke-width="1"/>
+
+<!-- ══════════════════════════════════════════════
+     ROW 6 — 孔小聖蒐集遊戲  (集 · MUTED)
+════════════════════════════════════════════════ -->
+<rect x="0" y="972" width="320" height="122" fill="#20304A"/>
+<rect x="0" y="972" width="10" height="122" fill="#8C8273"/>
+<rect x="18" y="1002" width="44" height="44" rx="7" fill="#8C8273"/>
+<text x="22" y="1032" font-size="22" font-weight="900" fill="white">集</text>
+<text x="74" y="1004" font-size="16" font-weight="700" fill="white">孔小聖蒐集遊戲</text>
+<text x="74" y="1023" font-size="11" fill="#706050" font-family="'IBM Plex Mono',monospace">Collecting Game · All Month</text>
+<line x1="320" y1="972" x2="320" y2="1094" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- Full span outline 6:00–20:30 x=336→1706 w=1370 -->
+<rect x="340" y="984" width="1362" height="98" rx="8" fill="none" stroke="#8C8273" stroke-width="2.5" stroke-dasharray="10 4"/>
+<text x="352" y="1022" font-size="16" fill="#5C5248" font-weight="600">整月開放　仁 · 義 · 禮 · 智 · 信 各款 AR 解鎖</text>
+<text x="352" y="1044" font-size="13" fill="#7A6858" font-family="'IBM Plex Mono',monospace">各古蹟點位掃碼 · 3/14 市集限定情人款</text>
+<text x="352" y="1064" font-size="13" fill="#7A6858" font-family="'IBM Plex Mono',monospace">3/1–3/9: 仁·義　　3/10–3/20: 禮·智　　3/21: 信（繞境限定）</text>
+
+<line x1="0" y1="1094" x2="1754" y2="1094" stroke="#D4CBB8" stroke-width="1"/>
+
+<!-- ══════════════════════════════════════════════
+     ROW 7 — 空腹子市集  (市 · WARM BROWN)
+════════════════════════════════════════════════ -->
+<rect x="0" y="1094" width="320" height="122" fill="#1E2E3F"/>
+<rect x="0" y="1094" width="10" height="122" fill="#7A5F3C"/>
+<rect x="18" y="1124" width="44" height="44" rx="7" fill="#7A5F3C"/>
+<text x="22" y="1154" font-size="22" font-weight="900" fill="white">市</text>
+<text x="74" y="1126" font-size="16" font-weight="700" fill="white">空腹子市集</text>
+<text x="74" y="1145" font-size="11" fill="#8A7050" font-family="'IBM Plex Mono',monospace">Kongfuzi Flea Market</text>
+<line x1="320" y1="1094" x2="320" y2="1216" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- 週末市集 11:00–17:30 → x=808→1423 w=615 — 3/6,3/7,3/13 -->
+<rect x="812" y="1106" width="607" height="44" rx="6" fill="#7A5F3C"/>
+<text x="822" y="1132" font-size="14" font-weight="600" fill="white">週末市集　3/6–7, 3/13　11:00–17:30</text>
+
+<!-- 孔怕愛上你市集 10:00–20:30 → x=714→1706 w=992 – lighter -->
+<rect x="718" y="1157" width="984" height="44" rx="6" fill="#9B7A4A" opacity="0.75"/>
+<text x="728" y="1183" font-size="14" font-weight="600" fill="white">孔怕愛上你特別市集 3/14　10:00–20:30</text>
+
+<!-- ══════════════ LABEL COLUMN SEPARATOR LINE (full height) ══════════════ -->
+<line x1="320" y1="240" x2="320" y2="1216" stroke="#E9DEC9" stroke-width="2"/>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<rect x="0" y="1216" width="1754" height="24" fill="#20304A"/>
+<text x="68" y="1233" font-size="13" fill="#8C7C68" font-family="'IBM Plex Mono',monospace" letter-spacing="1">台南孔廟  ·  2027年3月  ·  仁義禮智信  ·  行動劇場 × 空腹子市集 × 繞境大典</text>
+<text x="1586" y="1233" font-size="13" fill="#6B89A7" font-family="'IBM Plex Mono',monospace">youkong2027.tw</text>
+
+<!-- ══════════════ ROW SEPARATORS (top-layer, crisp) ══════════════ -->
+<line x1="0" y1="240" x2="1754" y2="240" stroke="#C9A66B" stroke-width="1.5" opacity="0.5"/>
+
+</svg>
