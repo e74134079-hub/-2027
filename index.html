@@ -226,6 +226,47 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:52px;
   margin:1.4rem auto 2.2rem;max-width:380px;padding:1.05rem 1.4rem;
   border-left:3px solid var(--gold);background:rgba(255,255,255,.52);border-radius:0 8px 8px 0;text-align:left}
 
+/* ===== COMMUNITY ===== */
+#community{background:var(--ink)}
+.comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-bottom:2.4rem}
+@media(max-width:860px){.comm-grid{grid-template-columns:1fr}}
+.comm-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.4rem 1.25rem;position:relative;transition:all .2s}
+.comm-card:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.18)}
+.comm-badge{position:absolute;top:1rem;right:1rem;padding:.2rem .65rem;border-radius:100px;font-size:.6rem;font-weight:700;letter-spacing:.12em;color:white}
+.comm-icon{font-size:1.8rem;margin-bottom:.75rem}
+.comm-title{font-family:'Noto Serif TC',serif;font-size:.95rem;font-weight:900;color:white;margin-bottom:.52rem;line-height:1.45}
+.comm-body{font-size:.75rem;color:rgba(255,255,255,.48);line-height:1.9;margin-bottom:.8rem}
+.comm-tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:.9rem}
+.comm-tag{padding:.15rem .52rem;background:rgba(255,255,255,.08);border-radius:100px;font-size:.62rem;color:rgba(255,255,255,.55);letter-spacing:.08em}
+.comm-req{display:flex;flex-direction:column;gap:.3rem;margin-bottom:1rem}
+.comm-reqitem{display:flex;align-items:center;gap:.5rem;font-size:.72rem;color:rgba(255,255,255,.56)}
+.comm-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.comm-btn{padding:.42rem 1.1rem;border:1.5px solid rgba(255,255,255,.28);border-radius:100px;background:none;font-size:.72rem;color:rgba(255,255,255,.65);cursor:pointer;transition:all .2s;letter-spacing:.08em}
+.comm-btn:hover{background:rgba(255,255,255,.12);color:white;border-color:rgba(255,255,255,.5)}
+.design-principles{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.6rem 1.4rem}
+.dp-title{font-family:'Noto Serif TC',serif;font-size:.82rem;letter-spacing:.22em;color:var(--gold);margin-bottom:1.1rem}
+.dp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media(max-width:720px){.dp-grid{grid-template-columns:1fr}}
+.dp-item{}
+.dp-num{font-family:'Noto Serif TC',serif;font-size:1.6rem;font-weight:900;color:rgba(255,255,255,.1);line-height:1;margin-bottom:.3rem}
+.dp-head{font-family:'Noto Serif TC',serif;font-size:.86rem;font-weight:700;color:white;margin-bottom:.35rem}
+.dp-body{font-size:.72rem;color:rgba(255,255,255,.42);line-height:1.85}
+
+/* ===== SIX ARTS ===== */
+.sixarts-wrap{margin-bottom:2.8rem}
+.sixarts-intro{margin-bottom:1.5rem}
+.sixarts-title{font-family:'Noto Serif TC',serif;font-size:1.1rem;font-weight:900;color:var(--ink);margin-bottom:.55rem}
+.sixarts-desc{font-size:.8rem;color:var(--muted);line-height:2;max-width:580px}
+.sixarts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem}
+@media(max-width:720px){.sixarts-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.sixarts-grid{grid-template-columns:1fr}}
+.sa-card{background:var(--warm);border-radius:11px;border:1px solid var(--border);padding:1rem;transition:all .2s}
+.sa-card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(44,62,87,.07)}
+.sa-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:.65rem}
+.sa-virtue{display:inline-block;padding:.12rem .5rem;border:1.5px solid var(--gold);border-radius:4px;font-family:'Noto Serif TC',serif;font-size:.78rem;font-weight:900;color:var(--gold);margin-bottom:.4rem}
+.sa-name{font-family:'Noto Serif TC',serif;font-size:.84rem;font-weight:700;color:var(--ink);margin-bottom:.3rem}
+.sa-desc{font-size:.72rem;color:var(--muted);line-height:1.75}
+
 footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;text-align:center;font-size:.74rem;line-height:2.2}
 
 /* ===== MODAL ===== */
@@ -281,7 +322,8 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
   <ul class="nlinks">
     <li><a href="#schedule">活動時程</a></li>
     <li><a href="#mapzone">繞境地圖</a></li>
-    <li><a href="#market">市集招募</a></li>
+    <li><a href="#community">社會共創</a></li>
+          <li><a href="#market">市集招募</a></li>
     <li><a href="#collect">孔小聖蒐集</a></li>
     <li><a href="#finale">繞境大典</a></li>
   </ul>
@@ -362,7 +404,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
   <div class="si">
     <p class="sl">繞境地圖</p>
     <h2 class="st" style="color:var(--ink)">府城古蹟巡禮 步行路線</h2>
-    <p class="sdesc">從孔廟出發，約 3 小時、3.9 公里回到孔廟。行進沿途，行動劇場在各點位依序上演。點選各標記查看劇場介紹。</p>
+    <p class="sdesc">從孔廟出發，約 3 小時、3.9 公里回到孔廟。行進沿途，行動劇場在各點位依序上演。點選地圖標記或右側列表查看各幕劇場介紹。</p>
     <div class="maplayout">
       <div class="mapframe">
         <svg viewBox="0 0 900 870" xmlns="http://www.w3.org/2000/svg" id="hmap">
@@ -375,36 +417,32 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
               <feComposite in="SourceGraphic" in2="b" operator="over"/>
             </filter>
             <style>
-              @keyframes mpulse{0%,100%{opacity:1}50%{opacity:.6}}
+              @keyframes mpulse{0%,100%{opacity:1}50%{opacity:.55}}
               @keyframes mdash{to{stroke-dashoffset:0}}
               #hmap .mpulse{animation:mpulse 2s ease-in-out infinite}
-              .rt1{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s .0s linear forwards}
-              .rt2{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s .4s linear forwards}
-              .rt3{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s .8s linear forwards}
-              .rt4{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s 1.2s linear forwards}
-              .rt5{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s 1.6s linear forwards}
+              .rt1{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s 0s linear forwards}
+              .rt2{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s .35s linear forwards}
+              .rt3{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s .7s linear forwards}
+              .rt4{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s 1.05s linear forwards}
+              .rt5{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s 1.4s linear forwards}
+              .rt6{stroke-dasharray:2000;stroke-dashoffset:2000;animation:mdash 3s 1.75s linear forwards}
               #hmap g.mdot{cursor:pointer}
-              #hmap g.mdot:hover circle.mi{r:16;}
+              #hmap g.mdot:hover circle.mi{r:16}
             </style>
           </defs>
 
-          <!-- PDF-derived base map -->
           <image href="map_bg.png" x="0" y="0" width="900" height="870" preserveAspectRatio="xMidYMid meet"/>
           <rect width="900" height="870" fill="rgba(245,240,232,0.06)"/>
 
-          <!-- Route lines -->
-          <polyline class="rt1" points="546,166 580,74"
-            fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
-          <polyline class="rt2" points="580,74 302,246"
-            fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
-          <polyline class="rt3" points="302,246 487,461"
-            fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
-          <polyline class="rt4" points="487,461 813,384"
-            fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
-          <polyline class="rt5" points="813,384 546,166"
-            fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
+          <!-- Route: 孔廟→文學館→司法→大南門→五妃廟→延平郡王祠→孔廟 -->
+          <polyline class="rt1" points="546,166 580,74"       fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
+          <polyline class="rt2" points="580,74 302,246"       fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
+          <polyline class="rt3" points="302,246 487,461"      fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
+          <polyline class="rt4" points="487,461 370,687"      fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
+          <polyline class="rt5" points="370,687 813,384"      fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
+          <polyline class="rt6" points="813,384 546,166"      fill="none" stroke="#C0392B" stroke-width="5" stroke-dasharray="12,7" opacity=".88" marker-end="url(#ar)"/>
 
-          <!-- DOT 孔廟 (546,166) -->
+          <!-- DOT 0 孔廟 (546,166) -->
           <g class="mdot" onclick="openModal(0)">
             <circle cx="546" cy="166" r="22" fill="#2C3E57" opacity=".12"/>
             <circle class="mi mpulse" cx="546" cy="166" r="14" fill="#2C3E57" filter="url(#dglow)"/>
@@ -415,41 +453,52 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
           <text x="598" y="165" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="9" fill="white" font-weight="bold">台南孔廟</text>
           <text x="598" y="175" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7.5" fill="#C9A66B">起點 · 禮</text>
 
-          <!-- DOT 臺文館 (580,74) -->
+          <!-- DOT 1 臺文館 (580,74) -->
           <g class="mdot" onclick="openModal(1)">
             <circle cx="580" cy="74" r="18" fill="#6B89A7" opacity=".12"/>
             <circle class="mi" cx="580" cy="74" r="11" fill="#6B89A7"/>
             <circle cx="580" cy="74" r="11" stroke="white" stroke-width="2" fill="none"/>
-            <text x="580" y="78" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">2</text>
+            <text x="580" y="78" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">1</text>
           </g>
           <rect x="595" y="62" width="88" height="28" rx="4" fill="rgba(107,137,167,.9)"/>
           <text x="639" y="75" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="white" font-weight="bold">臺灣文學館</text>
           <text x="639" y="85" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="rgba(255,255,255,.8)">湯德章公園 · 義</text>
 
-          <!-- DOT 司法博物館 (302,246) -->
+          <!-- DOT 2 司法博物館 (302,246) -->
           <g class="mdot" onclick="openModal(2)">
             <circle cx="302" cy="246" r="18" fill="#8C8273" opacity=".12"/>
             <circle class="mi" cx="302" cy="246" r="11" fill="#8C8273"/>
             <circle cx="302" cy="246" r="11" stroke="white" stroke-width="2" fill="none"/>
-            <text x="302" y="250" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">3</text>
+            <text x="302" y="250" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">2</text>
           </g>
           <rect x="213" y="234" width="74" height="28" rx="4" fill="rgba(140,130,115,.9)"/>
           <text x="250" y="247" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="white" font-weight="bold">司法博物館</text>
-          <text x="250" y="257" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="rgba(255,255,255,.8)">沿線點 · 法</text>
+          <text x="250" y="257" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="rgba(255,255,255,.8)">第二幕 · 理</text>
 
-          <!-- DOT 大南門 (487,461) -->
+          <!-- DOT 3 大南門 (487,461) -->
           <g class="mdot" onclick="openModal(3)">
             <circle cx="487" cy="461" r="18" fill="#46826E" opacity=".12"/>
             <circle class="mi" cx="487" cy="461" r="11" fill="#46826E"/>
             <circle cx="487" cy="461" r="11" stroke="white" stroke-width="2" fill="none"/>
-            <text x="487" y="465" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">4</text>
+            <text x="487" y="465" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">3</text>
           </g>
           <rect x="383" y="449" width="84" height="28" rx="4" fill="rgba(70,130,110,.9)"/>
           <text x="425" y="462" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="white" font-weight="bold">大南門碑林</text>
-          <text x="425" y="472" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="rgba(255,255,255,.8)">第四幕 · 智</text>
+          <text x="425" y="472" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="rgba(255,255,255,.8)">第三幕 · 智</text>
 
-          <!-- DOT 延平郡王祠 (813,384) -->
+          <!-- DOT 4 五妃廟 (370,687) -->
           <g class="mdot" onclick="openModal(4)">
+            <circle cx="370" cy="687" r="18" fill="#A54B64" opacity=".12"/>
+            <circle class="mi" cx="370" cy="687" r="11" fill="#A54B64"/>
+            <circle cx="370" cy="687" r="11" stroke="white" stroke-width="2" fill="none"/>
+            <text x="370" y="691" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">4</text>
+          </g>
+          <rect x="385" y="675" width="64" height="28" rx="4" fill="rgba(165,75,100,.9)"/>
+          <text x="417" y="688" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="white" font-weight="bold">五妃廟</text>
+          <text x="417" y="698" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="rgba(255,255,255,.8)">第四幕 · 信</text>
+
+          <!-- DOT 5 延平郡王祠 (813,384) -->
+          <g class="mdot" onclick="openModal(5)">
             <circle cx="813" cy="384" r="18" fill="#9B6E37" opacity=".12"/>
             <circle class="mi" cx="813" cy="384" r="11" fill="#9B6E37"/>
             <circle cx="813" cy="384" r="11" stroke="white" stroke-width="2" fill="none"/>
@@ -457,7 +506,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
           </g>
           <rect x="728" y="372" width="80" height="28" rx="4" fill="rgba(155,110,55,.9)"/>
           <text x="768" y="385" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="white" font-weight="bold">延平郡王祠</text>
-          <text x="768" y="395" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="rgba(255,255,255,.8)">第二幕 · 仁</text>
+          <text x="768" y="395" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="7" fill="rgba(255,255,255,.8)">第五幕 · 仁</text>
 
           <!-- Compass -->
           <g transform="translate(858,822)">
@@ -467,12 +516,10 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
             <polygon points="0,12 -5,2 5,2" fill="#8C8273"/>
             <text y="-19" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#C0392B" font-weight="bold">N</text>
           </g>
-          <!-- Scale bar -->
           <line x1="28" y1="845" x2="130" y2="845" stroke="#5a5a5a" stroke-width="1.5"/>
           <line x1="28" y1="839" x2="28" y2="851" stroke="#5a5a5a" stroke-width="1.5"/>
           <line x1="130" y1="839" x2="130" y2="851" stroke="#5a5a5a" stroke-width="1.5"/>
           <text x="79" y="862" text-anchor="middle" font-family="Noto Sans TC,sans-serif" font-size="8.5" fill="#5a5a5a">200m</text>
-          <!-- Legend -->
           <rect x="12" y="12" width="152" height="66" rx="6" fill="rgba(255,255,255,.88)"/>
           <circle cx="25" cy="26" r="6" fill="#2C3E57"/>
           <text x="36" y="30" font-family="Noto Sans TC,sans-serif" font-size="9" fill="#2C3E57">主場地（行動劇場）</text>
@@ -487,49 +534,128 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
       <!-- STOPS LIST -->
       <div class="stopslist" id="stops-panel">
         <div class="sc2 act" onclick="openModal(0)">
-          <div class="sc2h">
-            <span class="sc2n" style="background:#2C3E57">孔</span>
-            <span class="sc2t">台南孔廟</span>
-            <span class="sc2v" style="background:#2C3E57;color:white">禮</span>
-          </div>
-          <div class="sc2d">序章出發地。禮生攔下隊伍，交付五常令牌，啟動巡禮。</div>
+          <div class="sc2h"><span class="sc2n" style="background:#2C3E57">孔</span><span class="sc2t">台南孔廟</span><span class="sc2v" style="background:#2C3E57;color:white">禮</span></div>
+          <div class="sc2d">序章出發地。禮生交付五常令牌，啟動府城巡禮。</div>
           <button class="sc2btn" onclick="openModal(0)">序章 · 15 min →</button>
         </div>
         <div class="sc2" onclick="openModal(1)">
-          <div class="sc2h">
-            <span class="sc2n" style="background:#6B89A7">2</span>
-            <span class="sc2t">臺灣文學館 ／ 湯德章公園</span>
-            <span class="sc2v" style="background:#6B89A7;color:white">義</span>
-          </div>
-          <div class="sc2d">第一幕。紅線橫過街角，義不是站在安全的一邊。</div>
+          <div class="sc2h"><span class="sc2n" style="background:#6B89A7">1</span><span class="sc2t">臺灣文學館 ／ 湯德章公園</span><span class="sc2v" style="background:#6B89A7;color:white">義</span></div>
+          <div class="sc2d">第一幕。路中央的選擇——害怕時，還是不出賣別人。</div>
           <button class="sc2btn" onclick="openModal(1)">第一幕 · 20 min →</button>
         </div>
         <div class="sc2" onclick="openModal(2)">
-          <div class="sc2h">
-            <span class="sc2n" style="background:#8C8273">3</span>
-            <span class="sc2t">司法博物館</span>
-            <span class="sc2v" style="background:#8C8273;color:white">法</span>
-          </div>
-          <div class="sc2d">沿線歷史點。日治時期法院，公義與法的具體場所。</div>
-          <button class="sc2btn" onclick="openModal(2)">歷史點 · 5 min →</button>
+          <div class="sc2h"><span class="sc2n" style="background:#8C8273">2</span><span class="sc2t">司法博物館</span><span class="sc2v" style="background:#8C8273;color:white">理</span></div>
+          <div class="sc2d">第二幕。誰說了算？規則要保護人，不是壓人。</div>
+          <button class="sc2btn" onclick="openModal(2)">第二幕 · 20 min →</button>
         </div>
         <div class="sc2" onclick="openModal(3)">
-          <div class="sc2h">
-            <span class="sc2n" style="background:#46826E">4</span>
-            <span class="sc2t">臺灣府城大南門</span>
-            <span class="sc2v" style="background:#46826E;color:white">智</span>
-          </div>
-          <div class="sc2d">第四幕。城門開不開？智是多聽一個人說話。</div>
-          <button class="sc2btn" onclick="openModal(3)">第四幕 · 20 min →</button>
+          <div class="sc2h"><span class="sc2n" style="background:#46826E">3</span><span class="sc2t">臺灣府城大南門</span><span class="sc2v" style="background:#46826E;color:white">智</span></div>
+          <div class="sc2d">第三幕。城門開不開？智是決定前先多問一句。</div>
+          <button class="sc2btn" onclick="openModal(3)">第三幕 · 20 min →</button>
         </div>
         <div class="sc2" onclick="openModal(4)">
-          <div class="sc2h">
-            <span class="sc2n" style="background:#9B6E37">5</span>
-            <span class="sc2t">延平郡王祠</span>
-            <span class="sc2v" style="background:#9B6E37;color:white">仁</span>
-          </div>
-          <div class="sc2d">第二幕。英雄放下刀，拿起一碗水。仁是走下來問有沒有飯。</div>
-          <button class="sc2btn" onclick="openModal(4)">第二幕 · 20 min →</button>
+          <div class="sc2h"><span class="sc2n" style="background:#A54B64">4</span><span class="sc2t">五妃廟</span><span class="sc2v" style="background:#A54B64;color:white">信</span></div>
+          <div class="sc2d">第四幕。五封未寄出的信——信是誠實地記得人。</div>
+          <button class="sc2btn" onclick="openModal(4)">第四幕 · 20 min →</button>
+        </div>
+        <div class="sc2" onclick="openModal(5)">
+          <div class="sc2h"><span class="sc2n" style="background:#9B6E37">5</span><span class="sc2t">延平郡王祠</span><span class="sc2v" style="background:#9B6E37;color:white">仁</span></div>
+          <div class="sc2d">第五幕。英雄下馬——有力量時，還願意蹲下來。</div>
+          <button class="sc2btn" onclick="openModal(5)">第五幕 · 20 min →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY PARTICIPATION -->
+<section class="sec" id="community" style="background:var(--ink)">
+  <div class="si">
+    <p class="sl" style="color:var(--steel)">社會共創</p>
+    <h2 class="st" style="color:white">我們需要你</h2>
+    <p class="sdesc" style="color:rgba(255,255,255,.48);max-width:600px">有孔繞繞不只是一場策展人的設計，更是一個需要在地聲音共同完成的社會設計計畫。從現在起到 2027 年 3 月，我們有三種方式需要你的加入。</p>
+
+    <div class="comm-grid">
+
+      <!-- Card 1: 演員招募 -->
+      <div class="comm-card">
+        <div class="comm-badge" style="background:#C0392B">招募中</div>
+        <div class="comm-icon">🎭</div>
+        <h3 class="comm-title">劇場演員・導覽人員招募</h3>
+        <p class="comm-body">行動劇場五幕的演員、說書人，以及繞境沿線的導覽解說員。我們優先邀請台南在地居民、文史工作者、戲劇科系學生，以及熟悉本地歷史的耆老。</p>
+        <div class="comm-tags">
+          <span class="comm-tag">在地居民優先</span>
+          <span class="comm-tag">文史工作者</span>
+          <span class="comm-tag">戲劇背景</span>
+          <span class="comm-tag">樂齡講師</span>
+        </div>
+        <div class="comm-req">
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#C0392B"></span>無需表演背景，有故事就夠</div>
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#C0392B"></span>2026 Q3 開始排練，每月 2 次</div>
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#C0392B"></span>提供劇本共同創作工作坊</div>
+        </div>
+        <button class="comm-btn" onclick="alert('演員招募表單將於 2026 年 9 月開放，請持續關注！')">我想參與演出 →</button>
+      </div>
+
+      <!-- Card 2: 利害關係人工作坊 -->
+      <div class="comm-card">
+        <div class="comm-badge" style="background:#6B89A7">籌備中</div>
+        <div class="comm-icon">🏛️</div>
+        <h3 class="comm-title">在地利害關係人對話工作坊</h3>
+        <p class="comm-body">在活動正式籌備前，我們將舉辦三場「在地聲音工作坊」，分別邀請孔廟禮生與文史學者、南門路周邊居民、以及周邊古蹟管理單位，確保「有孔繞繞」是從在地長出來的計畫，而不是外來策展的強加。</p>
+        <div class="comm-tags">
+          <span class="comm-tag">以成書院禮生</span>
+          <span class="comm-tag">大成里居民</span>
+          <span class="comm-tag">文史學者</span>
+          <span class="comm-tag">各館管理單位</span>
+        </div>
+        <div class="comm-req">
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#6B89A7"></span>第一場：2026 年 10 月（禮生 × 文史）</div>
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#6B89A7"></span>第二場：2026 年 11 月（居民 × 商家）</div>
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#6B89A7"></span>第三場：2026 年 12 月（跨館協調）</div>
+        </div>
+        <button class="comm-btn" style="border-color:var(--steel);color:var(--steel)" onclick="alert('工作坊邀請名單正在確認中，如有意願請來信登記！')">登記參與工作坊 →</button>
+      </div>
+
+      <!-- Card 3: 籌備公聽會 -->
+      <div class="comm-card">
+        <div class="comm-badge" style="background:#C9A66B;color:var(--ink)">公開徵詢</div>
+        <div class="comm-icon">📋</div>
+        <h3 class="comm-title">活動籌備公聽會</h3>
+        <p class="comm-body">「有孔繞繞」涉及孔廟廣場、府前路、南門路等公共空間的臨時使用，以及多個國定古蹟場域的配合。我們主動舉辦公開說明會，向中西區居民、周邊商家與文資委員說明計畫內容、空間使用原則，並收集意見。</p>
+        <div class="comm-tags">
+          <span class="comm-tag">古蹟無痕策展承諾</span>
+          <span class="comm-tag">噪音管制方案</span>
+          <span class="comm-tag">停車疏導計畫</span>
+          <span class="comm-tag">文資法規預審</span>
+        </div>
+        <div class="comm-req">
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#C9A66B"></span>公聽會預計 2027 年 1 月舉辦</div>
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#C9A66B"></span>意見收集開放至 2027 年 2 月</div>
+          <div class="comm-reqitem"><span class="comm-dot" style="background:#C9A66B"></span>計畫修正結果公開回覆</div>
+        </div>
+        <button class="comm-btn" style="border-color:var(--gold);color:var(--gold)" onclick="alert('公聽會資訊將於 2026 年 12 月公告，歡迎屆時參與！')">了解籌備進度 →</button>
+      </div>
+    </div>
+
+    <!-- 設計原則聲明 -->
+    <div class="design-principles">
+      <div class="dp-title">社會設計三項承諾</div>
+      <div class="dp-grid">
+        <div class="dp-item">
+          <div class="dp-num">01</div>
+          <div class="dp-head">古蹟無痕策展</div>
+          <div class="dp-body">所有裝置、市集設施採非固定式設計，不鑿孔、不黏著，採模組化底座。任何電力與燈光架設均符合文資法規範，並事先取得文資委員書面審查同意。</div>
+        </div>
+        <div class="dp-item">
+          <div class="dp-num">02</div>
+          <div class="dp-head">在地聲音優先</div>
+          <div class="dp-body">劇場腳本的文史內容由在地禮生、耆老、文史工作者共同審訂。市集攤位以地域優先原則招募，孔廟 500 公尺範圍內的在地商家享有優先申請資格。</div>
+        </div>
+        <div class="dp-item">
+          <div class="dp-num">03</div>
+          <div class="dp-head">活動後的永續性</div>
+          <div class="dp-body">孔小聖 IP 所有權歸孔廟管理委員會。六藝體驗區的課程設計在活動後轉為常設工作坊，由在地導覽員持續運作，避免活動一結束場域又恢復原本的靜默。</div>
         </div>
       </div>
     </div>
@@ -548,6 +674,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
       <button class="at" onclick="fa(this,'historic')">百年老店</button>
       <button class="at" onclick="fa(this,'creative')">文化創意</button>
       <button class="at" onclick="fa(this,'food')">在地飲食</button>
+      <button class="at" onclick="fa(this,'liuyi')" style="border-color:var(--gold);color:var(--gold)">✦ 六藝區</button>
     </div>
     <div class="mktg" id="mg">
       <div class="mc" data-area="historic food"><div class="mci ra">🍜</div><div class="mcb"><div class="mcn">富盛號碗粿</div><div class="mct">傳統小吃 · 1872 年創立</div><div class="mcx">府城百年碗粿老店，代代相傳的古早配方</div><span class="mctag">步行 4 min</span></div></div>
@@ -559,6 +686,52 @@ footer{background:var(--ink);color:rgba(255,255,255,.36);padding:2.2rem 2rem;tex
       <div class="mc" data-area="creative"><div class="mci rg">🎨</div><div class="mcb"><div class="mcn">府城手作工坊</div><div class="mct">台南工藝 · 在地設計</div><div class="mcx">以台南古建築紋樣為靈感的陶器、印染、木刻</div><span class="mctag">設計在地</span></div></div>
       <div class="mc" data-area="food confucius"><div class="mci rh">☕</div><div class="mcb"><div class="mcn">廟埕咖啡</div><div class="mct">文青咖啡 · 孔廟廣場旁</div><div class="mcx">老洋樓咖啡，活動期間供應五常限定飲品</div><span class="mctag">孔廟旁</span></div></div>
     </div>
+    <!-- SIX ARTS ZONE -->
+    <div class="sixarts-wrap" id="sixarts-section">
+      <div class="sixarts-intro">
+        <h3 class="sixarts-title">✦ 六藝生活圈 — 讓儒學走入市集日常</h3>
+        <p class="sixarts-desc">市集不只是攤位的集合。空腹子市集規劃「六藝體驗區」，將《周禮》六藝——禮、樂、射、御、書、數——轉譯為六組可以親身參與的當代體驗攤位，讓每個人在逛市集的同時，不知不覺走入儒家的生活哲學。</p>
+      </div>
+      <div class="sixarts-grid">
+        <div class="sa-card" data-area="liuyi">
+          <div class="sa-icon" style="background:#f0ebe2">🎋</div>
+          <div class="sa-virtue">禮</div>
+          <div class="sa-name">禮 — 儀式設計體驗</div>
+          <div class="sa-desc">學習一個日常儀式的設計邏輯：桌上的茶杯如何擺、說話的節奏如何停頓。在「禮不只是規矩」的框架下，動手設計你自己的小儀式。</div>
+        </div>
+        <div class="sa-card" data-area="liuyi">
+          <div class="sa-icon" style="background:#edf0f8">🎶</div>
+          <div class="sa-virtue" style="color:#6B89A7;border-color:#6B89A7">樂</div>
+          <div class="sa-name">樂 — 聲音地景工作坊</div>
+          <div class="sa-desc">用廟埕的空氣、老建築的回聲、人聲的層疊，創作一段「孔廟聲音地景」。不需要任何樂器背景，只需要耳朵和當下的注意力。</div>
+        </div>
+        <div class="sa-card" data-area="liuyi">
+          <div class="sa-icon" style="background:#f5ece8">🏹</div>
+          <div class="sa-virtue" style="color:#C0392B;border-color:#C0392B">射</div>
+          <div class="sa-name">射 — 專注與放下體驗</div>
+          <div class="sa-desc">投壺（投箭入壺）的當代版：不比輸贏，練習的是「瞄準時的呼吸」。古代射藝的精神是「反求諸己」——箭沒射中，先問自己哪裡沒準備好。</div>
+        </div>
+        <div class="sa-card" data-area="liuyi">
+          <div class="sa-icon" style="background:#ebf0eb">🗺️</div>
+          <div class="sa-virtue" style="color:#46826E;border-color:#46826E">御</div>
+          <div class="sa-name">御 — 府城走讀地圖</div>
+          <div class="sa-desc">古代「御」是駕車駕馬，今日是「如何帶一個人走進陌生的地方又不讓他迷路」。動手畫一張你最熟悉的台南街道心理地圖，和陌生人交換。</div>
+        </div>
+        <div class="sa-card" data-area="liuyi">
+          <div class="sa-icon" style="background:#f5f0e8">✍️</div>
+          <div class="sa-virtue" style="color:#9B6E37;border-color:#9B6E37">書</div>
+          <div class="sa-name">書 — 孔廟字形拓印</div>
+          <div class="sa-desc">選取孔廟建築上的漢字紋飾，用拓印的方式做成你的專屬書籤。「書」在六藝裡不只是識字，是人和文字之間的身體關係。</div>
+        </div>
+        <div class="sa-card" data-area="liuyi">
+          <div class="sa-icon" style="background:#ece8f0">🔢</div>
+          <div class="sa-virtue" style="color:#7B5EA7;border-color:#7B5EA7">數</div>
+          <div class="sa-name">數 — 算你的府城時間</div>
+          <div class="sa-desc">用算術計算：你這一生，還有幾次機會參加祭孔？孔廟的古井到地表有幾公尺水壓？「數」是讓人用數字理解自己在世界裡的位置。</div>
+        </div>
+      </div>
+    </div>
+
     <div class="recbox">
       <div>
         <div class="rct">申請加入空腹子市集</div>
@@ -722,34 +895,39 @@ const M = "mascot.png";
 
 // Props for each scene — SVG-only props, mascot image alongside
 const STOPS=[
-  {act:"序章",title:"禮門未開",virtue:"禮",
-   scene:"場景：孔廟廣場，觀眾集合。\n\n禮生攔下隊伍：「今日夫子不在殿中。他說，若禮只留在廟裡，便只是空殼。若禮能走入街道，才是真正的禮。」\n\n一位現代學生質疑：「祭孔不就是很老、很慢？」\n\n禮生交給他一枚五常令牌，帶領觀眾巡行府城五個地點，找回仁義禮智信。",
-   ith:"互動環節",itp:"每位觀眾拿到一張小紙，寫下「今日你要帶回孔廟的是哪一個字？」最後回孔廟時交換。",
-   time:"序章 · 15 分鐘",
-   props:`<div class="mprops"><div style="width:48px;height:48px;border-radius:50%;background:var(--beige);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center"><span style="font-family:Noto Serif TC,serif;font-size:1.3rem;font-weight:900;color:var(--gold)">禮</span></div><span style="font-size:.7rem;color:var(--muted)">五常令牌</span></div>`},
-  {act:"第一幕",title:"路中央的義",virtue:"義",
-   scene:"場景：臺灣文學館前 ／ 湯德章紀念公園。\n\n一條紅線橫過街角，隊伍被切斷，觀眾不能前進。\n\n年輕學生問：「義，是不是站在對的一邊？」\n記錄者回答：「義不是站在安全的一邊。義是你知道會失去什麼，還是選擇不交出別人。」",
-   ith:"互動環節",itp:"觀眾輪流說一句：「我願意記得＿＿。」每人說完才能繼續前行。",
-   time:"第一幕 · 20 分鐘",
-   props:`<div class="mprops"><div style="width:80px;height:3px;background:#C0392B;border-radius:2px;opacity:.75"></div><span style="font-size:.7rem;color:var(--muted)">街道紅線</span></div>`},
-  {act:"沿線歷史點",title:"司法博物館",virtue:"─",
-   scene:"司法博物館前身為日治時期台南地方法院，1912 年落成，是台灣保存最完整的司法廳舍古蹟之一。\n\n高聳的希臘柱式建築，曾是殖民統治法律權力的具體場所，也是台灣人在歷史中與「法」相遇的空間。\n\n繞境路線行經此處，導覽員簡介建築歷史，停留約 5 分鐘。",
-   ith:"停留說明",itp:"本站為沿線歷史點，不安排正式演出。導覽員口述建築歷史，建議拍照留念。",
-   time:"沿線點 · 約 5 分鐘",
-   props:`<div class="mprops"><div style="display:flex;gap:5px">${[0,1,2,3].map(()=>'<div style="width:5px;height:36px;background:rgba(44,62,87,.18);border-radius:2px"></div>').join('')}</div><span style="font-size:.7rem;color:var(--muted)">希臘柱式</span></div>`},
-  {act:"第四幕",title:"城門開不開",virtue:"智",
-   scene:"場景：臺灣府城大南門（寧南門）城牆下。\n\n守門人攔住隊伍：「城門不能隨便開。開錯一次，禍入城。關錯一次，人死城外。」\n\n三個選擇：① 為了安全，全部關門　② 為了仁慈，全部開門　③ 先聽、先查、先判斷，再決定。\n\n觀眾分組討論。守門人最後說：「智，不是最快回答。智是知道自己可能判錯，所以願意多聽一個人說話。」",
-   ith:"通過儀式",itp:"觀眾逐一穿越大南門城洞，守門人問每人：「你帶著什麼回孔廟？」每人回答一個字：仁、義、禮、智、信。",
-   time:"第四幕 · 20 分鐘",
-   props:`<div class="mprops">${['①關門','②開門','③先聽'].map(t=>`<div style="padding:.2rem .5rem;background:var(--beige);border-radius:4px;font-size:.65rem;color:var(--ink);font-weight:700">${t}</div>`).join('')}<span style="font-size:.7rem;color:var(--muted)">三個選擇</span></div>`},
-  {act:"第二幕",title:"前無古人",virtue:"仁",
-   scene:"場景：延平郡王祠，鄭成功記憶空間。\n\n角色威風出場：「開山！開路！開城！開國！」\n\n旁邊市民突然問：「開了之後，誰住？勝了之後，誰活？一座城若只記得英雄，不記得百姓，算不算仁？」\n\n主角被迫放下刀，改拿一碗水、一把米、一張地圖。\n\n「仁不是不戰。仁是戰後仍願意安人。」",
-   ith:"互動環節",itp:"觀眾從演員手上拿到一粒象徵性的「米籤」，代表百姓之名。回孔廟終章時，把這些無名之物放回共同容器。",
-   time:"第二幕 · 20 分鐘",
-   props:`<div class="mprops" style="gap:.75rem"><svg width="10" height="32" viewBox="0 0 10 32"><rect x="3" y="0" width="4" height="22" rx="2" fill="rgba(107,137,167,.45)"/><rect x="1" y="11" width="8" height="2.5" rx="1" fill="rgba(107,137,167,.45)"/></svg><div style="width:28px;height:14px;border-radius:50%;background:var(--beige);border:1.5px solid var(--gold)"></div><span style="font-size:.7rem;color:var(--muted)">刀 → 碗</span></div>`}
+  {act:"序章",title:"夫子出走了",virtue:"禮",
+   scene:"場景：孔廟廣場，觀眾集合。\n\n禮生攔下隊伍——\n「今日夫子不在殿中。他說，若禮只留在廟裡，便只是空殼。若禮能走入街道，才是真正的禮。」\n\n孔小聖接過五常令牌，帶領觀眾巡行府城五個地點，找回仁義禮智信。\n\n「所以祭孔不是叫孔子幫我考上。是我先問自己，能不能成為比較像人的人。」",
+   ith:"互動環節",itp:"每位觀眾拿到一張小紙，寫下「今日你要帶回孔廟的是哪一個字？」全程結束後回孔廟交換。",
+   time:"序章 · 15 分鐘 · 孔廟廣場",
+   props:`<div class="mprops"><div style="width:52px;height:52px;border-radius:50%;background:var(--beige);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center"><span style="font-family:Noto Serif TC,serif;font-size:1.4rem;font-weight:900;color:var(--gold)">禮</span></div><span style="font-size:.7rem;color:var(--muted)">五常令牌</span></div>`},
+  {act:"第一幕",title:"路中央的選擇",virtue:"義",
+   scene:"場景：臺灣文學館前 ／ 湯德章紀念公園。\n\n孔小聖帶大家走到湯德章公園，演員從路邊出現喊：\n「讓開！路要通過！」\n\n人群被一條紅線切開。有人說沉默，有人說逃跑，有人說把名字交出去，有人說不能害別人。\n\n孔小聖問：「如果講真話會受傷，那還要講嗎？」\n\n記錄者回答：「義不是站在最安全的位置。義是你知道自己會害怕，卻還是不把別人推向危險。」",
+   ith:"互動環節",itp:"觀眾輪流說：「我願意記得＿＿。」每人說完，紅線才往後退一步，隊伍才能繼續前行。",
+   time:"第一幕 · 20 分鐘 · 臺灣文學館前廣場",
+   props:`<div class="mprops"><div style="width:90px;height:3px;background:#C0392B;border-radius:2px;opacity:.7"></div><span style="font-size:.7rem;color:var(--muted)">街道紅線</span><div style="padding:.22rem .7rem;border:1px dashed #C0392B;border-radius:4px;font-size:.68rem;color:#C0392B;margin-top:.3rem">「義」— 撕掉一角的紙</div></div>`},
+  {act:"第二幕",title:"誰說了算",virtue:"理",
+   scene:"場景：司法博物館前。\n\n孔小聖被告上一場荒謬審判，罪名是：「冒充孔子神位、擅離大成殿。」\n\n法官問：「你說你要找孔子，有證據嗎？」\n孔小聖拿出「義」，法官說：「只有義不夠。義若沒有理，可能變成衝動。理若沒有義，可能變成冷冰冰的規則。」\n\n觀眾參與投票：孔小聖是冒牌貨，還是夫子留下來的替身？\n\n法官最後宣判：「本庭宣判——孔小聖有資格繼續尋找孔子。因為真正的理，不是只問規定怎麼寫，而是問規定保護了誰。」",
+   ith:"互動環節",itp:"觀眾分組投票。法官聆聽兩方理由後作出裁決，並在孔小聖的尋人令上蓋下「理」字印章。",
+   time:"第二幕 · 20 分鐘 · 司法博物館前廣場",
+   props:`<div class="mprops"><div style="display:flex;gap:5px">${[0,1,2,3].map(()=>'<div style="width:5px;height:38px;background:rgba(44,62,87,.18);border-radius:2px"></div>').join('')}</div><div style="padding:.22rem .7rem;border:1px dashed #8C8273;border-radius:4px;font-size:.68rem;color:#8C8273;margin-top:.3rem">「理」字印章</div></div>`},
+  {act:"第三幕",title:"城門開不開",virtue:"智",
+   scene:"場景：臺灣府城大南門（寧南門）城牆下。\n\n守城人攔住隊伍：「城門不能隨便開。開錯，危險進城；關錯，善意被擋在城外。」\n\n三個選擇：\n① 全部開門，因為要有仁心\n② 全部關門，因為要保護城市\n③ 先問清楚來者是誰，再決定\n\n孔小聖一開始想選「全部開門」，但守城人說：「善良若沒有判斷，會讓人受傷。聰明若沒有仁心，會讓城變冷。」\n\n觀眾幫孔小聖問三個問題：你從哪裡來？你要找誰？你進城之後會傷害誰嗎？",
+   ith:"通過儀式",itp:"觀眾逐一穿越大南門城洞，守門人問每人：「你帶著什麼回孔廟？」每人回答一個字後才能過城門。",
+   time:"第三幕 · 20 分鐘 · 大南門城洞",
+   props:`<div class="mprops">${['①開門','②關門','③先問'].map(t=>`<div style="padding:.2rem .55rem;background:var(--beige);border-radius:4px;font-size:.65rem;color:var(--ink);font-weight:700">${t}</div>`).join('')}<span style="font-size:.7rem;color:var(--muted);margin-top:.3rem">城門形狀小卡「智」</span></div>`},
+  {act:"第四幕",title:"五封沒有寄出的信",virtue:"信",
+   scene:"場景：五妃廟。\n\n孔小聖發現夫子留下的一片水波紋衣袖，卡在廟旁。\n\n五個聲音輪流念出五封信——\n「他們說我是忠。」\n「他們說我是烈。」\n「他們說我是故事。」\n「可是我也曾經怕。」\n「若你要記得我，不要只記得我死去的樣子，也要記得我曾經活過。」\n\n孔小聖問：「信，是不是答應了就永遠不能反悔？」\n聲音回答：「信不是被故事綁住。信是後來的人願意誠實面對故事。不替人亂說，不把人變成好看的牌位。」",
+   ith:"互動環節",itp:"五封信中最後一封的背面有「信」字，由觀眾輪流傳遞、朗讀，最後一人保管，回孔廟終章時一起帶回。",
+   time:"第四幕 · 20 分鐘 · 五妃廟前",
+   props:`<div class="mprops"><div style="display:flex;flex-direction:column;gap:3px">${[1,2,3,4,5].map(i=>`<div style="width:72px;height:9px;background:rgba(165,75,100,${0.1+i*0.08});border-radius:2px"></div>`).join('')}</div><span style="font-size:.7rem;color:var(--muted)">五封信</span></div>`},
+  {act:"第五幕",title:"英雄下馬",virtue:"仁",
+   scene:"場景：延平郡王祠，鄭成功記憶空間。\n\n孔小聖遇到威風的將軍：「你找孔子，為何來找我？」\n孔小聖：「因為大家都拜你。你一定知道偉大是什麼。」\n\n將軍大笑：「被拜不難。難的是被拜以後，還記得下面的人。」\n\n這時百姓、工匠、渡海者、孩子、老人出現，問：\n「城建好了，我們住哪裡？名字被寫進歷史的人很少，那沒被寫進去的人呢？」\n\n將軍慢慢放下兵器，拿起一碗水，交給孔小聖：「仁不是站得最高。仁是看見最低的人。」",
+   ith:"互動環節",itp:"觀眾從演員手上拿到象徵百姓的「米籤」。回孔廟終章時，把無名之物放回共同容器，完成整個巡禮。",
+   time:"第五幕 · 20 分鐘 · 延平郡王祠前",
+   props:`<div class="mprops" style="gap:.8rem"><svg width="10" height="34" viewBox="0 0 10 34"><rect x="3" y="0" width="4" height="23" rx="2" fill="rgba(155,110,55,.4)"/><rect x="1" y="12" width="8" height="2.5" rx="1" fill="rgba(155,110,55,.4)"/></svg><div style="width:30px;height:15px;border-radius:50%;background:var(--beige);border:1.5px solid var(--gold)"></div><span style="font-size:.7rem;color:var(--muted)">刀 → 水碗</span></div>`}
 ];
 
-function openModal(i){
+function openModall(i){
   const s=STOPS[i];
   document.getElementById('m-act').textContent=s.act;
   document.getElementById('m-title').textContent=s.title;
